@@ -1,65 +1,108 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Studio Fisioggiono - Oggiono LC</title>
+        <meta
+          name="description"
+          content="Lo studio Fisioggiono si occupa di ortopedia e riabilitazione."
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
+        <Image
+          src="/logo.png"
+          width="305"
+          height="128"
+          alt="Studio Fisioggiono"
+        />
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Benvenuti allo studio <span className={styles.code}>Fisioggiono</span>
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          Lo studio <span className={styles.code}>Fisioggiono</span> si occupa
+          di <strong>ortopedia</strong> e <strong>riabilitazione</strong>.{" "}
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
+          <div className={styles.card}>
+            <Image
+              src="/lo-studio.jpeg"
+              width="305"
+              height="128"
+              alt="Lo Studio"
+            />
+            <h3>Lo Studio</h3>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              Facciamo semplicemente il nostro lavoro con entusiasmo e passione.
             </p>
-          </a>
+            <p>
+              La nostra ventennale esperienza sul campo ci permette di
+              affrontare ogni patologia con professionalità e sicurezza.
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <Image
+              src="/ortopedico.jpg"
+              width="305"
+              height="128"
+              alt="L'Ortopedia"
+            />
+            <h3>L'Ortopedia</h3>
+            <p>
+              <ul>
+                <li>Visite Ortopediche</li>
+                <li>Infiltrazioni</li>
+                <li>Acido Ialuronico</li>
+                <li>Cellule Staminali</li>
+                <li>Valutazione Posturale</li>
+              </ul>
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <Image
+              src="/tecar.jpg"
+              width="305"
+              height="128"
+              alt="L'Ortopedia"
+            />
+            <h3>Le Terapie</h3>
+            <p>
+              <ul>
+                <li>SCENAR TERAPIA</li>
+                <li>TECAR TERAPIA</li>
+                <li>ROLFING e RPG riprogrammazione posturale globale</li>
+                <li>MFX miofibrolisi diacutanea</li>
+                <li>MASSOTERAPIA</li>
+                <li>OSTEOPATIA</li>
+                <li>LINFODRENAGGIO</li>
+              </ul>
+            </p>
+          </div>
+
+          <div className={styles.card}>
+            <h3>Contatti</h3>
+            <p>
+              <a href="tel:03411556835">0341.1556835</a>
+            </p>
+            <p>
+              <a href="mailto:fisioggiono@gmail.com">fisioggiono@gmail.com</a>
+            </p>
+          </div>
         </div>
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+        © {new Date().getFullYear()} Matteo Bertella
       </footer>
     </div>
-  )
+  );
 }
