@@ -34,8 +34,8 @@ export default function Home() {
           <div className={styles.card}>
             <Image
               src="/lo-studio.jpeg"
-              width="305"
-              height="128"
+              width="600"
+              height="400"
               alt="Lo Studio"
             />
             <h3>Lo Studio</h3>
@@ -51,8 +51,8 @@ export default function Home() {
           <div className={styles.card}>
             <Image
               src="/ortopedico.jpg"
-              width="305"
-              height="128"
+              width="600"
+              height="400"
               alt="L'Ortopedia"
             />
             <h3>L'Ortopedia</h3>
@@ -70,8 +70,8 @@ export default function Home() {
           <div className={styles.card}>
             <Image
               src="/tecar.jpg"
-              width="305"
-              height="128"
+              width="600"
+              height="400"
               alt="L'Ortopedia"
             />
             <h3>Le Terapie</h3>

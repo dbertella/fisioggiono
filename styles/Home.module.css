@@ -88,7 +88,7 @@
 }
 
 .card h3 {
-  margin: 0 0 1rem 0;
+  margin: 1rem 0;
   font-size: 1.5rem;
 }
 
@@ -102,9 +102,12 @@
   height: 1em;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 655px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+  .card {
+    flex-basis: 100%;
   }
 }
