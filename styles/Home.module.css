@@ -1,6 +1,6 @@
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,7 +8,7 @@
 }
 
 .main a {
-  color: #0070f3;
+  color: #042142;
   text-decoration: none;
 }
 
@@ -29,21 +29,19 @@
 
 .footer {
   width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: #042142;
+  color: #fff;
+  padding: 1rem;
 }
 
-.footer img {
-  margin-left: 0.5rem;
+.footerCard {
+  margin: 1rem;
+  flex-basis: 45%;
+  padding: 1.5rem;
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.footerCopy {
+  color: #777;
 }
 
 .title {
@@ -75,8 +73,8 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: 3rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .card {

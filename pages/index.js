@@ -1,7 +1,11 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
-import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
+import {
+  AiOutlinePhone,
+  AiOutlineMail,
+  AiOutlinePushpin,
+} from "react-icons/ai";
 
 export default function Home() {
   return (
@@ -26,30 +30,10 @@ export default function Home() {
           Benvenuti allo studio <span className={styles.code}>Fisioggiono</span>
         </h1>
         <div className={styles.imageGrid}>
-          <Image
-            src="/ankle.jpg"
-            width="251"
-            height="320"
-            alt=""
-          />
-          <Image
-            src="/back.jpg"
-            width="251"
-            height="320"
-            alt=""
-          />
-          <Image
-            src="/hip.jpg"
-            width="251"
-            height="320"
-            alt=""
-          />
-          <Image
-            src="/shoulder.jpg"
-            width="251"
-            height="320"
-            alt=""
-          />
+          <Image src="/ankle.jpg" width="251" height="320" alt="" />
+          <Image src="/back.jpg" width="251" height="320" alt="" />
+          <Image src="/hip.jpg" width="251" height="320" alt="" />
+          <Image src="/shoulder.jpg" width="251" height="320" alt="" />
         </div>
 
         <p className={styles.description}>
@@ -123,8 +107,12 @@ export default function Home() {
               alt="L'Ortopedia"
             />
             <h3>Contatti</h3>
-            <p>
-              <strong>FISIOGGIONO</strong>: VIA XXV Aprile, 26 Oggiono (Lc)
+            <p className={styles.iconLink}>
+              <AiOutlinePushpin />
+              <div className={styles.gap} />
+              <a href="https://www.google.com/maps?q=VIA+XXV+Aprile,+26+Oggiono+(Lc)&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjzs4L8gozuAhWCyYUKHUwQATgQ_AUoAnoECAcQBA">
+                Via XXV Aprile, 26 Oggiono (Lc)
+              </a>
             </p>
             <p className={styles.iconLink}>
               <AiOutlinePhone />
@@ -141,8 +129,36 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        © {new Date().getFullYear()} Matteo Bertella
+        <div className={styles.grid}>
+          <div className={styles.footerCard}>
+            <h3>Fisioggiono s.r.l.</h3>
+            <p>
+              <strong>P.I.:</strong> 11227600969
+              <br />
+              SUBM70N
+            </p>
+            <p>
+              <strong>Pec:</strong>{" "}
+              <a href="mailto:fisioggiono@pec.it">fisioggiono@pec.it</a>
+            </p>
+            <p>
+              <strong>IBAN:</strong> IT26X0890150920000000550692
+            </p>
+          </div>
+          <div className={styles.footerCard}>
+            <h3>Orari</h3>
+            <p>
+              <strong>Da Lunedì a Venerdì:</strong> 7:30 - 19:30
+            </p>
+            <p>
+              <strong>Sabato:</strong> 8:00 - 13:00
+            </p>
+          </div>
+        </div>
       </footer>
+      <p className={styles.footerCopy}>
+        © {new Date().getFullYear()} Matteo Bertella
+      </p>
     </div>
   );
 }
