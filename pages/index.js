@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
+import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
 
 export default function Home() {
   return (
@@ -24,6 +25,32 @@ export default function Home() {
         <h1 className={styles.title}>
           Benvenuti allo studio <span className={styles.code}>Fisioggiono</span>
         </h1>
+        <div className={styles.imageGrid}>
+          <Image
+            src="/ankle.jpg"
+            width="251"
+            height="320"
+            alt=""
+          />
+          <Image
+            src="/back.jpg"
+            width="251"
+            height="320"
+            alt=""
+          />
+          <Image
+            src="/hip.jpg"
+            width="251"
+            height="320"
+            alt=""
+          />
+          <Image
+            src="/shoulder.jpg"
+            width="251"
+            height="320"
+            alt=""
+          />
+        </div>
 
         <p className={styles.description}>
           Lo studio <span className={styles.code}>Fisioggiono</span> si occupa
@@ -89,11 +116,24 @@ export default function Home() {
           </div>
 
           <div className={styles.card}>
+            <Image
+              src="/contatti.jpeg"
+              width="600"
+              height="400"
+              alt="L'Ortopedia"
+            />
             <h3>Contatti</h3>
             <p>
-              <a href="tel:03411556835">0341.1556835</a>
+              <strong>FISIOGGIONO</strong>: VIA XXV Aprile, 26 Oggiono (Lc)
             </p>
-            <p>
+            <p className={styles.iconLink}>
+              <AiOutlinePhone />
+              <div className={styles.gap} />
+              <a href="tel:03411556835">0341 1556835</a>
+            </p>
+            <p className={styles.iconLink}>
+              <AiOutlineMail />
+              <div className={styles.gap} />
               <a href="mailto:fisioggiono@gmail.com">fisioggiono@gmail.com</a>
             </p>
           </div>
