@@ -86,9 +86,11 @@ export default function Home() {
             />
             <h3>Le Terapie</h3>
             <ul>
+              <li>FISIOTERAPIA</li>
               <li>SCENAR TERAPIA</li>
               <li>TECAR TERAPIA</li>
-              <li>ROLFING e RPG riprogrammazione posturale globale</li>
+              <li>ROLFING</li>
+              <li>RPG riprogrammazione posturale globale</li>
               <li>MFX miofibrolisi diacutanea</li>
               <li>MASSOTERAPIA</li>
               <li>OSTEOPATIA</li>
@@ -103,7 +105,7 @@ export default function Home() {
               height="400"
               alt="L'Ortopedia"
             />
-            <h3>Contatti</h3>
+            <h3>I Contatti</h3>
             <p className={styles.iconLink}>
               <AiOutlinePushpin />
               <span className={styles.gap} />
@@ -121,7 +123,7 @@ export default function Home() {
               <span className={styles.gap} />
               <a href="mailto:fisioggiono@gmail.com">fisioggiono@gmail.com</a>
             </p>
-            <h3>Orari</h3>
+            <h3>Gli Orari</h3>
             <p>
               <strong>Da Lunedì a Venerdì:</strong> 7:30 - 19:30
             </p>
@@ -134,22 +136,6 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <div className={styles.grid}>
-          <div className={styles.footerCard}>
-            <h3>Orari</h3>
-            <p>
-              <strong>Da Lunedì a Venerdì:</strong> 7:30 - 19:30
-            </p>
-            <p>
-              <strong>Sabato:</strong> 8:00 - 13:00
-            </p>
-            <p>
-              <strong>Tel:</strong> <a href="tel:03411556835">0341 1556835</a>
-            </p>
-            <p>
-              <strong>E-Mail:</strong>{" "}
-              <a href="mailto:fisioggiono@gmail.com">fisioggiono@gmail.com</a>
-            </p>
-          </div>
           <div className={styles.footerCard}>
             <h3>Fisioggiono s.r.l.</h3>
             <p>
@@ -164,6 +150,22 @@ export default function Home() {
             </p>
             <p>
               <strong>IBAN:</strong> IT26X0890150920000000550692
+            </p>
+          </div>
+          <div className={styles.footerCard}>
+            <h3>Orari</h3>
+            <p>
+              <strong>Da Lunedì a Venerdì:</strong> 7:30 - 19:30
+            </p>
+            <p>
+              <strong>Sabato:</strong> 8:00 - 13:00
+            </p>
+            <p>
+              <strong>Tel:</strong> <a href="tel:03411556835">0341 1556835</a>
+            </p>
+            <p>
+              <strong>E-Mail:</strong>{" "}
+              <a href="mailto:fisioggiono@gmail.com">fisioggiono@gmail.com</a>
             </p>
           </div>
         </div>
